@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Viajes - Gerson Benito</title>
+</head>
+<body>
+    <div class="titulo-pagina">
+        <h1>¡Vienbenidos, a la pagina de reservas de viajes!</h1>
+    </div>
+    <div class="nuevo-reserva">
+        <button type="button" onclick="nuevo()">Nueva reserva</button>
+    </div>
+    <!-- formuario -->
+    <div class="formulario">
+        <div class="contenedor-formulario">
+            <div class="titulo-form listado">
+                <h1>Nuevo reserva de viaje</h1>
+            </div>
+            <form id="formViaje">
+                <div class="contenedor-input">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="custom" id="titulo" placeholder="Ingrese el titulo del viaje">
+                </div>
+                <div class="contenedor-input">
+                    <label for="imagen">Url imagen</label>
+                    <input type="text" class="custom" id="imagen" placeholder="https://imagen.com">
+                </div>
+                <div class="contenedor-input">
+                    <label for="precio">Precios</label>
+                    <input type="number" class="custom" id="precio" placeholder="Ingrese el precio del viaje">
+                </div>
+                <div class="contenedor-input">
+                    <label for="destino">Destinos</label>
+                    <select id="destino" class="custom">
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Nueva Zalanda">Nueva Zelanda</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                    </select>
+                </div>
+                <div class="contenedor-input">
+                    <label for="descripcion">descripcion</label>
+                    <textarea id="descripcion" class="custom" rows="5" placeholder="Ingrese una descripcion"></textarea>
+                </div>
+                <div class="contenedor">
+                    <button type="button" class="cancelar" onclick="limpiarFormulario()" >Cancelar</button>
+                    <button type="button" onclick="agregarDatos()" >Reservar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- texto listado de los viajes -->
+    <div class="listado">
+        <h1>Lista de viajes</h1>
+    </div>
+
+    <!-- contenedor de las cards -->
+    <div class="contendor-cards"></div>
+    <div class="vacio"></div>
+</body>
+    <script src="js/index.js"></script>
+</html>
