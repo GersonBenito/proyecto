@@ -20,14 +20,16 @@
             <div class="titulo-form listado">
                 <h1>Nuevo reserva de viaje</h1>
             </div>
-            <form id="formViaje">
+            <div class="alert"></div>
+            <form id="formViaje" autocomplete="off">
                 <div class="contenedor-input">
                     <label for="titulo">Titulo</label>
                     <input type="text" class="custom" id="titulo" placeholder="Ingrese el titulo del viaje">
                 </div>
                 <div class="contenedor-input">
                     <label for="imagen">Url imagen</label>
-                    <input type="text" class="custom" id="imagen" placeholder="https://imagen.com">
+                    <!-- <input type="text" class="custom" id="imagen" placeholder="https://imagen.com"> -->
+                    <input type="file" class="custom" id="imagen" placeholder="Seleccione una imagen">
                 </div>
                 <div class="contenedor-input">
                     <label for="precio">Precios</label>
